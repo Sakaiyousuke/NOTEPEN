@@ -1,9 +1,3 @@
 h1 {
-    color: red;
-}
-
-
-.font_test {
-    font-size: 40px;    /* 文字サイズ指定 */
-    color: red;     /* 文字色指定 */
+    color: blue;
 }
