@@ -5,18 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひまわり連絡帳</title>
     <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./static/css/materialize/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>今日の一言</h1>
+    <header>
+        <h1 class="headline">
+          <a>ひまわり連絡帳</a>
+        </h1>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p>マイページ</p>
+                <p>一  覧</p>
+                <p>ログアウト</p>
+            </div>
+        </div>
+
+    </header>
+
+
+   
     
-    <p>1234</p>
-    <p>5678</p>
-    <div>
+    <p>〇〇さん こんにちは</p>
+    <p>〇月〇日（〇）</p>
+    <p>今日の一言</p>
+
+
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PBRGLbrlUEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/k27L4PbOZ10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+ 
     
-
+    <footer>Notepen</footer>
     
 </body>
 </html>
