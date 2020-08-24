@@ -110,8 +110,13 @@ header {
 
  p {
    text-align: center;
-   font-size: 100%;
+   font-size: 200%;
  }
+
+ .menu_font {
+  text-align: center;
+  font-size: 100%;
+}
 
 .yes_no_btn {
   display:flex;
