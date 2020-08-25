@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひまわり連絡帳</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/materialize/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="headline">
+          <a>ひまわり連絡帳</a>
+        </h1>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p class="menu_font">マイページ</p>
+                <p class="menu_font">一  覧</p>
+                <p class="menu_font">ログアウト</p>
+            </div>
+        </div>
+
+    </header>
+
+    <p>{{name}}さん</p>
+    <p>今日は病院に行きますか？</p>
+
+    <ul class="yes_no_btn">
+      <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">radio_button_unchecked</i></li>
+      <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">close</i></li>
+    </ul>
+
+    
+    <footer>Notepen</footer>
+    
+</body>
+</html>
