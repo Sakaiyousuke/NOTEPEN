@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひまわり連絡帳</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/materialize/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="headline">
+          <a>ひまわり連絡帳</a>
+        </h1>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p>マイページ</p>
+                <p>一  覧</p>
+                <p>ログアウト</p>
+            </div>
+        </div>
+
+    </header>
+
+
+   
+    <div class="greeting">   
+        <p>{{name}}さん こんにちは</p>
+        <p>{{date}}</p>
+        <p>今日の一言</p>
+        <p>{{meiden}}</p>
+    </div> 
+
+    <div class="excercise">
+        <p>毎日を元気に過ごすため、<br>
+            認知症予防のために運動をしましょう</p>
+        <p>ラジオ体操をおすすめします</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PBRGLbrlUEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k27L4PbOZ10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
+    <footer>Notepen</footer>
+    
+</body>
+</html>
