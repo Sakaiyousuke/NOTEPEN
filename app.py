@@ -53,7 +53,7 @@ def index():
 
 @app.route("/hospital")
 def hospital():
-    return render_temcdplate('hospital.html')
+    return render_temlate('hospital.html')
 
 @app.route("/where")
 def where():
