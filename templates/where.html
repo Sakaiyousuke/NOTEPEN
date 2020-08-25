@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ひまわり連絡帳</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../static/css/materialize/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="headline">
+          <a>ひまわり連絡帳</a>
+        </h1>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p class="menu_font">マイページ</p>
+                <p class="menu_font">一  覧</p>
+                <p class="menu_font">ログアウト</p>
+            </div>
+        </div>
+
+    </header>
+
+    <p>今日はどこかにお出かけですか ？</p>
+
+    <ul class="action_btn">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">local_grocery_store</i>買い物</li>
+        <li class="waves-effect waves-light btn"><i class="material-icons left">palette</i>趣味</li>
+        <li class="waves-effect waves-light btn"><i class="material-icons left">directions_walk</i>散歩</li>
+        <li class="waves-effect waves-light btn"><i class="material-icons left">group</i>友人宅</li>
+        <li class="waves-effect waves-light btn"><i class="material-icons left">train</i>旅行</li>
+        <li class="waves-effect waves-light btn"><i class="material-icons left">work</i>仕事</li>
+    </ul>
+
+
+
+
+    <ul class="yes_no_btn">
+        <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">radio_button_unchecked</i></li>
+        <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">close</i></li>
+    </ul>
+
+    
+    <footer>Notepen</footer>
+    
+</body>
+</html>
