@@ -51,10 +51,10 @@ def login():
 def index():
     if 'user_id' in session :
         # user_id = session['user_id']
-        # conn = sqlite3.connect('himawari.db')
-        # c = conn.cursor()
-        # c.execute("select name from user where id = ?", (user_id,))
-        # user_info = c.fetchone()
+        conn = sqlite3.connect('himawari.db')
+        c = conn.cursor()
+        c.execute("select name from user where id = ?", (user_id,))
+        user_info = c.fetchone()
 #         # user_infoの中身を確認
 
 #         # 課題1の答えはここ del_flagが0のものだけ表示する
