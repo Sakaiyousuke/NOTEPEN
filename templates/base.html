@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひまわり連絡帳</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="../static/css/materialize/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/materialize/css/materialize.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -30,15 +30,16 @@
 
     </header>
 
-    <p>{{name}}さん</p>
-    <p>今日は病院に行きますか？</p>
 
-    <ul class="yes_no_btn">
-      <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">radio_button_unchecked</i></li>
-      <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">close</i></li>
-    </ul>
-
+    {% block content %}
+	{% endblock %}
     
+
+
+
+
+
+
     <footer>Notepen</footer>
     
 </body>
