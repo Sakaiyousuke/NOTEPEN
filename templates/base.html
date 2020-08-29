@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ひまわり連絡帳</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="../static/css/materialize/css/materialize.css">
 
@@ -14,17 +16,15 @@
 </head>
 <body>
     <header>
-        <h1 class="headline">
-          <a>ひまわり連絡帳</a>
-        </h1>
+        <h1 class="headline"><img src="/static/css/himawari_logo.png"></h1>
         <div id="nav-drawer">
             <input id="nav-input" type="checkbox" class="nav-unshown">
             <label id="nav-open" for="nav-input"><span></span></label>
             <label class="nav-unshown" id="nav-close" for="nav-input"></label>
             <div id="nav-content">
                 <p class="menu_font">マイページ</p>
-                <p class="menu_font">一  覧</p>
-                <p class="menu_font">ログアウト</p>
+                <p class="menu_font"><a href="/bbs">一  覧</a></p>
+                <p class="menu_font"><a href="/logout">ログアウト</a></p>
             </div>
         </div>
 

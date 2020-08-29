@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+{% for item in comment_list %}
     <div class="greeting">   
-        <p>{{name}}さん こんにちは</p>
-        <p>{{date}}</p>
+        <p>{{user_name[0]}}さん こんにちは</p>
+        <p>{{today.year}}年{{today.month}}月{{today.day}}日</p>
         <p>今日の一言</p>
-        <p>{{meigen}}</p>
+       
+        <p>{{item["comment"]}}</p>
     </div> 
+{% endfor %}
 
     <div class="excercise">
         <p>毎日を元気に過ごすため、<br>

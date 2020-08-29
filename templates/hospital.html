@@ -5,8 +5,13 @@
 <p>今日は病院に行きますか？</p>
 
 <ul class="yes_no_btn">
-  <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">radio_button_unchecked</i></li>
-  <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><a href="/where">close</a></i></li>
+  <form action ="/good" method="post">
+  <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons"><input type="submit">radio_button_unchecked</i></li>
+  </form>
+
+  <form action ="/bad" method="post">
+  <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons"><input type="submit">close</i></li>
+  </form>
 </ul> 
 
 {% endblock %}

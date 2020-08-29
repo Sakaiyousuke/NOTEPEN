@@ -6,19 +6,44 @@
     <p>今日はどこかにお出かけですか ？</p>
 
     <ul class="action_btn">
-        <li class="waves-effect waves-light btn"><i class="material-icons left">local_grocery_store</i>買い物</li>
-        <li class="waves-effect waves-light btn"><i class="material-icons left">palette</i>趣味</li>
-        <li class="waves-effect waves-light btn"><i class="material-icons left">directions_walk</i>散歩</li>
-        <li class="waves-effect waves-light btn"><i class="material-icons left">group</i>友人宅</li>
-        <li class="waves-effect waves-light btn"><i class="material-icons left">train</i>旅行</li>
-        <li class="waves-effect waves-light btn"><i class="material-icons left">work</i>仕事</li>
+        <form action="/shopping" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">買い物</i>買い物</li>
+        <input type="submit">
+        </form>
+
+        <form action="/hobby" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">趣味</i>趣味</li>
+        <input type="submit">
+        </form>
+
+        <form action="/walking" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">散歩</i>散歩</li>
+        <input type="submit">
+        </form>
+
+        <form action="/friend" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">友人宅</i>友人宅</li> 
+        <input type="submit">
+        </form>
+
+        <form action="/trip" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">旅行</i>旅行</li>
+
+        <input type="submit">
+        </form>
+
+        <form action="/warking" method="POST">
+        <li class="waves-effect waves-light btn"><i class="material-icons left">仕事</i>仕事</li>
+
+        <input type="submit">
+        </form>
     </ul>
 
 
 
 
-    <ul class="yes_no_btn">
+    <!-- <ul class="yes_no_btn">
         <li class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">radio_button_unchecked</i></li>
         <li class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">close</i></li>
-    </ul>
+    </ul> -->
 {% endblock %}
